@@ -6,3 +6,9 @@ on:
 jobs:
   call_nested_reusable_workflow_main:
     uses: kumabes-org/nesting-reusable-workflows/.github/workflows/call-reusable.yaml@main
+    
+  call_nested_reusable_workflow_develop:
+    uses: kumabes-org/nesting-reusable-workflows/.github/workflows/call-reusable.yaml@develop
+
+  call_nested_reusable_workflow_feature:
+    uses: kumabes-org/nesting-reusable-workflows/.github/workflows/call-reusable.yaml@feature/um-teste-qualquer
