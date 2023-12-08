@@ -4,17 +4,5 @@ on:
   push
 
 jobs:
-  call_reusable_workflow_main:
-    uses: kumabes-org/reusable-workflow/.github/workflows/sample.yaml@main
-    with:
-      name: "main"
-
-  call_reusable_workflow_release:
-    uses: kumabes-org/reusable-workflow/.github/workflows/sample.yaml@release/v1.0.0
-    with:
-      name: "release/v1.0.0"
-          
-  call_reusable_workflow_develop:
-    uses: kumabes-org/reusable-workflow/.github/workflows/sample.yaml@develop
-    with:
-      name: "develop"
+  call_nested_reusable_workflow_main:
+    uses: kumabes-org/nesting-reusable-workflows/.github/workflows/call-reusable.yaml@main
